@@ -1,0 +1,38 @@
+.IYKJNA {
+  grid-gap: 16px;
+  display: grid;
+}
+._1Mi_hQ,
+._4G_CDw {
+  grid-gap: 8px;
+  display: grid;
+}
+._1Mi_hQ {
+  align-items: center;
+  grid-auto-flow: column;
+  justify-content: start;
+}
+.E_yBwg {
+  overflow: hidden;
+  position: relative;
+}
+.xRxCMw {
+  grid-gap: 16px;
+  display: grid;
+}
+.aWayEQ {
+  border-radius: 4px;
+  display: grid;
+  left: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+@media (max-width: 599px) {
+  .aWayEQ {
+    border-radius: 0;
+    left: -16px;
+    width: calc(100% + 32px);
+  }
+}
+/*# sourceMappingURL=sourcemaps/726a29250ddb6186.ltr.css.map*/

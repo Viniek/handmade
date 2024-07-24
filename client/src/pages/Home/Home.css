@@ -1,0 +1,30 @@
+.homehero {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  /* height:60vh; */
+  background-color: #e2faff;
+  padding: 3rem 0rem;
+}
+.homehero {
+  color: rgb(228, 200, 200);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  justify-content: space-around;
+  background-color: navy;
+  border-top-right-radius: 260px;
+  border-bottom-right-radius: 260px;
+  width: 100rem;
+  margin-left: 1rem;
+  padding: 3rem 6rem;
+}
+.heroh1 {
+  padding-right: 60rem;
+}
+.heroimg img {
+  width: 30rem;
+}

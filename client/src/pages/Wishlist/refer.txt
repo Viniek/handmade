@@ -1,0 +1,63 @@
+
+import React from 'react'
+import './Buyers.css'
+import  { useState, useEffect } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
+import toast, { toastConfig } from 'react-simple-toasts';
+import 'react-simple-toasts/dist/theme/dark.css'; 
+
+toastConfig({ theme: 'dark' });
+function Wishlist() {
+
+  const [Item, setItem] = useState([]);
+  
+  // const [cart, setCart] = useState([]);
+
+
+useEffect(() => {
+ 
+
+  async function getitems(){
+try {
+const response = await axios.get('http://localhost:5000/api/items/getallItems')
+
+console.log(response.data);
+
+} catch (error) {
+console.log(error.message);
+}
+  }
+  getitems()
+},[])
+}
+  return(
+    <>
+    <section className='items'>
+
+     
+ {Item.map((items)=>(
+  <div key={items.item_id}>
+<img src={items.image} alt={items.image} />
+  </div>
+))} 
+
+
+    </section>
+    </>
+  )
+
+export default Wishlist
+
+
+
+
+
+
+
+
+
+
+
+
+

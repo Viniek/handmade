@@ -1,0 +1,40 @@
+.S2Cymw {
+  fill: var(--4RaSjg);
+}
+.RmyUeg {
+  fill: var(--OuCkCQ);
+}
+.OJT_Iw {
+  --UUhAjg: 1;
+  height: 64px;
+  pointer-events: auto;
+  position: relative;
+  width: 24px;
+}
+.Glb_Kw,
+._1f2qLw {
+  position: absolute;
+}
+.KfykPA .Glb_Kw,
+.KfykPA ._1f2qLw {
+  left: 0;
+  top: 50%;
+  transform: translateX(-1px) translateY(-50%);
+}
+.cmnmmw .Glb_Kw,
+.cmnmmw ._1f2qLw {
+  right: 0;
+  top: 50%;
+  transform: translateX(1px) translateY(-50%);
+}
+[dir="ltr"] .cmnmmw,
+[dir="rtl"] .KfykPA {
+  --UUhAjg: -1;
+}
+.KfykPA ._1f2qLw {
+  transform: translateX(-1px) translateY(-50%) scaleX(var(--UUhAjg));
+}
+.cmnmmw ._1f2qLw {
+  transform: translateX(1px) translateY(-50%) scaleX(var(--UUhAjg));
+}
+/*# sourceMappingURL=sourcemaps/bf9e417171e09f1c.ltr.css.map*/

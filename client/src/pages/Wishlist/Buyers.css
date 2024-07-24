@@ -1,0 +1,48 @@
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minimax(250px, 1fr));
+}
+.itemscontainer {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  gap: 0;
+  /* border:1px pink solid; */
+  border-radius: 20px;
+  padding: 1rem;
+  background-color: rgb(238, 203, 229);
+  transition: all ease-in-out 0.5s;
+}
+.itemscontainer img {
+  max-width: 100%;
+}
+.itemscontainer:hover {
+  scale: 1.01;
+  background-color: rgb(238, 234, 237);
+}
+.ratings {
+  color: red;
+  fill: red;
+}
+.red-star {
+  color: red;
+  font-size: 24px;
+}
+/* .item{
+    display:flex;
+    flex-direction: column;
+    border:1px  pink solid;
+    border-radius: 20px;
+    ::selection{
+        background-color: blueviolet;
+        color:goldenrod;
+    }
+    }
+    .item img{
+   width:100%;
+    } */

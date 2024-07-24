@@ -1,0 +1,89 @@
+.nk6qOQ {
+  align-items: stretch;
+  display: flex;
+}
+.J7cYGg {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: -1px;
+  min-height: 24px;
+}
+.SpgRRg {
+  flex: 1;
+  margin-left: 8px;
+}
+.u6sYBQ > .SpgRRg {
+  display: list-item;
+  list-style: disc outside;
+  margin-left: 16px;
+}
+.u6sYBQ > .SpgRRg::marker {
+  font-size: calc(var(--wQwVGw, 0.1rem) * 14);
+}
+.J7cYGg,
+.u6sYBQ > .SpgRRg::marker {
+  color: var(--VNXpSw);
+}
+.f6gP0w {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.fZogYg {
+  display: none;
+}
+.BDefFA {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.JSCQsw,
+.bo6KpQ {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+._6kX1hw {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 50%;
+}
+.JSCQsw,
+._6kX1hw {
+  z-index: 1;
+}
+._nihZA {
+  background: var(--KtXlRg);
+}
+._nihZA,
+.qHxVEA {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.qHxVEA {
+  align-items: flex-end;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 40px;
+  top: 0;
+  z-index: 2;
+}
+.Lll80A {
+  display: inline-block;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=sourcemaps/c897598bd01df564.ltr.css.map*/

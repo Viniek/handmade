@@ -1,0 +1,130 @@
+
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import useUserStore from "../../userStore";
+import "./Admin.css";
+
+function Admin() {
+  const [requests, setRequests] = useState([]);
+  const [showRequests, setShowRequests] = useState(false);
+  const [items, setItems] = useState([]);
+  const [form, setForm] = useState({
+    image: "",
+    material: "",
+    description: "",
+    seller: "",
+    similarProducts: "",
+    price: "",
+    ratings: "",
+  });
+  const user = useUserStore((state) => state.user);
+
+  const fetchRequests = async () => {
+    if (user.role === 'admin') {
+      try {
+        const response = await axios.get("http://localhost:5000/api/users/requests");
+        setRequests(response.data.data);
+        setShowRequests(true);
+      } catch (error) {
+        console.error("Error fetching requests:", error);
+        setRequests([]); // Set requests to an empty array on error
+      }
+    }
+  };
+
+  const fetchItems = async () => {
+    if (user.role === 'admin') {
+      try {
+        const response = await axios.get("http://localhost:5000/api/items/getallItems");
+        setItems(response.data);
+      } catch (error) {
+        console.error("Error fetching items:", error);
+      }
+    }
+  };
+
+  useEffect(() => {
+    fetchItems();
+  }, []);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleAddItem = async () => {
+    try {
+      await axios.post("http://localhost:5000/api/items/createItem", form);
+      fetchItems(); // Refresh the list
+    } catch (error) {
+      console.error("Error adding item:", error);
+    }
+  };
+
+  const handleDeleteItem = async (id) => {
+    try {
+      await axios.delete(`http://localhost:5000/api/items/delete/${id}`);
+      fetchItems(); // Refresh the list
+    } catch (error) {
+      console.error("Error deleting item:", error);
+    }
+  };
+
+  return (
+    <>
+      <button className="View_requests" onClick={fetchRequests}>View Requests</button>
+      <button className="Add_admin">Add Admin</button>
+      <button className="Add_post" onClick={handleAddItem}>Add Post</button>
+      
+      {/* Add Item Form */}
+      <div className="add-item-form">
+        <h3>Add New Item</h3>
+        <input type="text" name="image" placeholder="Image URL" onChange={handleChange} />
+        <input type="text" name="material" placeholder="Material" onChange={handleChange} />
+        <input type="text" name="description" placeholder="Description" onChange={handleChange} />
+        <input type="text" name="seller" placeholder="Seller" onChange={handleChange} />
+        <input type="text" name="similarProducts" placeholder="Similar Products" onChange={handleChange} />
+        <input type="number" name="price" placeholder="Price" onChange={handleChange} />
+        <input type="text" name="ratings" placeholder="Ratings" onChange={handleChange} />
+        <button onClick={handleAddItem}>Submit</button>
+      </div>
+
+      {/* Item List with Edit and Delete */}
+      {items.length > 0 && (
+        <div className="items-list">
+          {items.map((item) => (
+            <div key={item.item_id} className="itemscontainer">
+              <img src={item.image} alt={item.image} />
+              <p>Price: Ksh {item.price}</p>
+              <h3>{item.description}</h3>
+              <p>Made from {item.material}</p>
+              <p>Made by {item.seller}</p>
+              <p>
+                Visit <a href={item.similarProducts} target="_blank" rel="noopener noreferrer">{item.similarProducts}</a> for similar products
+              </p>
+              <button onClick={() => handleDeleteItem(item.item_id)}>Delete</button>
+              {/* Add/Edit functionality can be added here */}
+            </div>
+          ))}
+        </div>
+      )}
+
+      {showRequests && (
+        <div className="requests-container">
+          {requests.length > 0 ? (
+            requests.map((request) => (
+              <div key={request.id} className="request-item">
+                <p>Full Name: {request.fullname}</p>
+                <p>Email Address: {request.emailaddress}</p>
+              </div>
+            ))
+          ) : (
+            <p>No requests found.</p>
+          )}
+        </div>
+      )}
+    </>
+  );
+}
+
+export default Admin;

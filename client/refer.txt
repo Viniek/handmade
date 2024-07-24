@@ -1,0 +1,232 @@
+// import React from 'react';
+import './Login.css'
+import toast, { toastConfig } from 'react-simple-toasts';
+import 'react-simple-toasts/dist/theme/dark.css'; 
+import React, { useState, useEffect } from 'react';
+import { useFormik } from 'formik';
+import { Link ,useNavigate } from 'react-router-dom';
+import { url_api } from '../../../utils/config';
+
+
+
+import axios from 'axios';
+
+function Signup() {
+const[loading,setLoading]=useState(false);
+const[error,setError]=useState("");
+const navigate=useNavigate();
+
+const  handleSubmit =async(values)=>{
+  try{
+    setLoading(true);
+    setError(false)
+// const response =await fetch (`${url_api}/api/users/register`,{
+//   method:"POST",
+//   headers:{
+//     "Content-Type":"application/json",  
+//         lastName: values.lastName,  
+//         email: values.email,
+//         password: values.password,
+       
+//   }, 
+//   body: JSON.stringify(values)
+// })
+const response=await axios.post('${apiBase}/api/users/register',values);
+
+const data=await response.json();
+console.log(data);
+console.log(e.message);
+if (data.success  ===true){
+  navigate("/Signin")
+}else{
+  setError(data.message)
+}
+  }catch(e){
+    setError(e.message)
+  }
+    finally{
+      setLoading(false);
+   
+  }
+}
+    const formik = useFormik({
+        initialValues: {
+          fullname: "",         
+          emailaddress: "",
+          password: "",   
+          confirmpassword:""      
+        },
+        onSubmit: handleSubmit,
+        validate: (values) => {
+          let errors = {};
+          if (values.fullname === "") {
+            errors.fullname = "fullname required..";
+          } else if (values.fullname.length < 3) {
+            errors.fullname = "Must have 3 characters or more...";
+          }       
+
+          if (values.emailaddress === "") {
+            errors.emailaddress = "Email address required"; 
+          } else if (!values.emailaddress.includes('@')) {
+            errors.emailaddress = "Enter a valid email...";
+          }
+
+          if (values.password === "") {
+            errors.password = "password required";
+          }
+          if (values.confirmpassword === "") {
+            errors.confirmpassword = "password required";
+          }
+        
+
+          return errors;
+        }
+      });
+// fetch
+
+      const [user, setUsers] = useState([]);
+
+useEffect(() => {
+  async function getUsers() {
+    try {
+      const response = await axios.get('http://localhost:5000/api/users/users');
+      setUsers(response.data); 
+      console.log(response.data);
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+  getUsers();
+}, []);
+
+
+  return (
+   <>
+    <section className='schedule_a_visit'>
+      <h2>Sign up</h2>
+      <form onSubmit={formik.handleSubmit}>
+        <div className='formfield'>
+          <input
+            type='text'
+            name="fullname"
+            id="fullname"
+            placeholder="Full name eg.vee...."
+            value={formik.values.fullname} 
+            onChange={formik.handleChange} 
+            onBlur={formik.handleBlur}required
+          />
+          {formik.touched.fullname && formik.errors.fullname && <p className="errorp">{formik.errors.fullname}</p>} 
+        </div>
+        
+       
+
+        <div className='formfield'>
+          <input 
+            type='text'  
+            name="emailaddress" 
+            id="emailaddress" 
+            placeholder='Email address...'
+            value={formik.values.emailaddress}  
+            onChange={formik.handleChange} 
+            onBlur={formik.handleBlur}required
+          />           
+          {formik.touched.emailaddress && formik.errors.emailaddress && <p className="errorp">{formik.errors.emailaddress}</p>} 
+        </div>
+        
+        <div className='formfield'>
+          <input
+            type='password' 
+            name="password" 
+            id="password" 
+            placeholder='password...'
+            value={formik.values.password}  
+            onChange={formik.handleChange} 
+            onBlur={formik.handleBlur}required
+          />                 
+          {formik.touched.password && formik.errors.password && <p className="errorp">{formik.errors.password}</p>} 
+        </div>
+
+        <div className='formfield'>
+          <input
+            type='password' 
+            name="confirmpassword" 
+            id="confirmpassword" 
+            placeholder='confirm password...'
+            value={formik.values.password}  
+            onChange={formik.handleChange} 
+            onBlur={formik.handleBlur}required
+          />                 
+          {formik.touched.confirmpassword && formik.errors.confirmpassword && <p className="errorp">{formik.errors.confirmpassword}</p>} 
+        </div>
+
+     
+        
+        <button type="submit" className="submit-btn" disabled={loading}  onClick={() => toast('Sign up successful!Proceed to Sign In🍞')}>
+          {loading ?"Please wait...":"Signup"}</button>
+          
+          <p>Already have an account?<Link to="/Signin">Sign in here</Link></p>
+          {error && <p className='error'>{error}</p>}
+      </form>
+    </section>
+{/* fetch */}
+    <section className='users'>
+
+{user.map((item) => (
+  <div key={user.user_id} className='container'>
+
+    <p>{user.fullname}</p>
+    <p>{user.emailaddress}</p>   
+    <p>{user.password}</p>          
+   
+  </div>
+))} 
+</section>
+   </>
+  );
+}
+
+export default Signup;
+
+
+
+
+
+// import React from 'react'
+// import './Login.css'
+// toastConfig({ theme: 'Colored Themes' });
+// import toast, { toastConfig } from 'react-simple-toasts';
+// import 'react-simple-toasts/dist/theme/dark.css'
+// import { useFormik } from 'formik';
+
+// function Signup() {
+//   const formik =useFormik({
+//     const formik =useFormik({
+//       initialValues:{
+//         Fullname:"",
+//         Emailaddress:"",
+//         Password:"",
+//       }
+//     })
+//   })
+//   return (
+//     <div className='login'>
+//       <label for="Fullname">Fullname</label>
+//       <input type="text" name="fullname" placeholder="Enter your full name..."/>
+
+//       <label for="Emailaddress">Emailaddress</label>
+//       <input type="email" name="Emailaddress" placeholder="Enter your Emailaddress..."/>
+
+//       <label for="Password">Password</label>
+//       <input type="text" name="Password" placeholder="Enter your Password..."/>
+
+//       <label for="Confirm Password">Confirm Password</label>
+//       <input type="text" name="Confirm Password" placeholder="Confirm  your Password..."/>
+   
+//       <button onClick={() => toast('Sign Up Successful! 🍞')}>
+//       Sign Up
+//     </button>
+//     </div>
+//   )
+// }
+
+// export default Signup

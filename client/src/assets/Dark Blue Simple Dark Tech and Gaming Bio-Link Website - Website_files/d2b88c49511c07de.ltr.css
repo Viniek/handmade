@@ -1,0 +1,38 @@
+.nRNSVA {
+  height: 100%;
+  pointer-events: none;
+  position: relative;
+}
+.lu_Lcw,
+.nRNSVA {
+  box-sizing: border-box;
+  display: flex;
+}
+.lu_Lcw {
+  background: var(--4RaSjg);
+  flex-basis: auto;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: auto;
+  overscroll-behavior: contain;
+  pointer-events: auto;
+}
+.kv8EjA {
+  border-bottom: 1px solid var(--OuCkCQ);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.iVZH8w {
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+  z-index: 0;
+}
+.gVIMHA {
+  border-top: 1px solid var(--OuCkCQ);
+  bottom: 0;
+  position: sticky;
+}
+/*# sourceMappingURL=sourcemaps/d2b88c49511c07de.ltr.css.map*/

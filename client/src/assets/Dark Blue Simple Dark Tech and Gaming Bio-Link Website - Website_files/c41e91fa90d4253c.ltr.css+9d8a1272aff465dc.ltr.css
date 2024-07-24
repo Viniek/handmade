@@ -1,0 +1,55 @@
+/* __FILE_CONTENT_FOR__:c41e91fa90d4253c.ltr.css */
+.jdClzA {
+  aspect-ratio: 686/428;
+  width: 100%;
+}
+.Y8TPUw {
+  align-items: center;
+  background-color: #7d2ae8;
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+.G4h9XA {
+  word-break: break-word;
+}
+/* __FILE_CONTENT_FOR__:9d8a1272aff465dc.ltr.css */
+.oQoQ3g {
+  display: grid;
+  justify-content: center;
+}
+.taG_vA {
+  align-items: center;
+  background-color: var(--Shm3YQ);
+  border: 1px solid var(--OuCkCQ);
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: grid;
+  height: 240px;
+  overflow: hidden;
+}
+.taG_vA,
+.z2Jj6A {
+  position: relative;
+}
+._2Neh2Q {
+  object-fit: cover;
+  width: 100%;
+}
+.yFuJNQ {
+  left: 24px;
+  position: absolute;
+  top: 24px;
+  width: 55%;
+}
+@media (max-width: 599px) {
+  .taG_vA {
+    border-left: 0;
+    border-radius: 0;
+    border-right: 0;
+  }
+}
+/*# sourceMappingURL=https://chunk-composing.canva.com/chunk-batch-sm/2_sourcemaps/c41e91fa90d4253c.ltr.css.map+2_sourcemaps/9d8a1272aff465dc.ltr.css.map */
