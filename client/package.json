@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@prisma/client": "^5.17.0",
     "axios": "^1.7.2",
     "dotenv": "^16.4.5",
     "formik": "^2.4.6",
@@ -22,6 +23,7 @@
     "react-typing-animator": "^5.6.2",
     "route": "^0.2.5",
     "routes": "^2.1.0",
+    "vite.js": "^1.0.1",
     "zustand": "^4.5.4"
   },
   "devDependencies": {

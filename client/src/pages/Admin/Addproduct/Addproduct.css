@@ -16,7 +16,7 @@
     /* width: 100%; */
 }
 .addProductContainer form{
-    background-color: #efc075;
+    background-color:rgb(176, 180, 241);
     width: 50%;
     padding: 1rem;
 }
@@ -36,4 +36,7 @@
     font-weight: 500;
     font-size: 1.5rem;
     color: green;
+  }
+  .AddProductbtn{
+    width:13rem;
   }

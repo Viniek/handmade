@@ -4,6 +4,8 @@ import useUserStore from "../../userStore";
 import { Link } from "react-router-dom";
 import "./Admin.css";
 import AdminNav from "./AdminNav";
+// import { PrismaClient } from "@prisma/client";
+// const prisma = new PrismaClient();
 
 function Admin() {
   const [requests, setRequests] = useState([]);
@@ -27,7 +29,6 @@ function Admin() {
       fetchItems();
     }
   }, [user]);
-
   const fetchRequests = async () => {
     if (user.role === "admin") {
       try {
@@ -36,10 +37,27 @@ function Admin() {
         setShowRequests(true);
       } catch (error) {
         console.error("Error fetching requests:", error);
+        console.log("Error details:", error.response ? error.response.data : "No response data");
         setRequests([]);
       }
+      console.log(error.message);
     }
   };
+  
+
+  // const fetchRequests = async () => {
+  //   if (user.role === "admin") {
+  //     try {
+  //       const response = await axios.get("http://localhost:5000/api/users/requests");
+  //       setRequests(response.data.data);
+  //       setShowRequests(true);
+  //     } catch (error) {
+  //       console.error("Error fetching requests:", error);
+  //       console.log(error.message);
+  //       setRequests([]);
+  //     }
+  //   }
+  // };
 
   const fetchItems = async () => {
     if (user.role === "admin") {

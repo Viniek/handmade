@@ -33,4 +33,8 @@
   .adminbuttons{
     display: flex;
     flex-direction: row;
+    gap:1px;
+  }
+  .adminbuttons button{
+    width:6rem;
   }
