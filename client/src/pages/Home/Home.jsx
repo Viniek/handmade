@@ -46,27 +46,48 @@ function Home() {
         </div>
       </section>
 
+
+{/* About us Section */}
       <h1>Passionate about craftsmanship?</h1>
       <section className="AboutUs">
         <p>What we do</p>
         <h2>We provide Services</h2>
-        <div className="AboutUsSection">
-          <p>
-                  Custom-made creations <br />
-          <img src=" https://res.cloudinary.com/dgn62le6w/image/upload/v1740139250/jhwjvsssn4kzmb7pxv5f.png"/>
+
         
+        <div className="AboutUsSection">
+         
+         {/* 1st List */}
+          <p className="offerList"> <img src=" https://res.cloudinary.com/dgn62le6w/image/upload/v1740139250/jhwjvsssn4kzmb7pxv5f.png"/><br />  
+         <h1>Custom-made creations</h1>      
+        uniquely crafted to match your style.<br/>
+        Personalized designs.<br/>
+        Just like you!
           </p>
-          <p>
-            Handmade with love and precision <br />
-         <img src="https://res.cloudinary.com/dgn62le6w/image/upload/v1740138712/neol0od62yzwkjydgde2.png"/>
+          {/* 2nd List */}
+          <p className="OfferList">
+          <img src="https://res.cloudinary.com/dgn62le6w/image/upload/v1740138712/neol0od62yzwkjydgde2.png"/>
+            <h1>Artisanal craftsmanship </h1>
+            made with skill, care, and attention to detail.<br/>
+            blend traditional techniques with modern creativity.<br/>
+            Quality is at the heart of everything we create.<br/>
           </p>
-          <p>
-            Where creativity meets quality <br />
+          {/* 3rd List */}
+          <p className="offerList">
           <img src=" https://res.cloudinary.com/dgn62le6w/image/upload/v1740138821/vlxiaqii2oo6lueheys3.png"/>
+          <h1> High-quality handmade products</h1>
+          We use premium materials to ensure durability.<br/>
+          Each item is carefully inspected for perfection.<br/>
+          Beauty and functionality come together in every piece.
           </p>
-          <p>
-            Unique, handcrafted designs <br />
-           <img src="https://res.cloudinary.com/dgn62le6w/image/upload/v1740138888/ke1pxcz4ot5ssnpvgyz3.png"/>
+          {/* 4th list */}
+          <p className="offerList">
+          <img src="https://res.cloudinary.com/dgn62le6w/image/upload/v1740138888/ke1pxcz4ot5ssnpvgyz3.png"/>
+         <h1> Designed for elegance and durability</h1>
+         We use premium materials to ensure durability.<br/>
+          Each item is carefully inspected for perfection.<br/>
+          Beauty and functionality come together in every piece.
+          
+ 
           </p>
         </div>
       </section>

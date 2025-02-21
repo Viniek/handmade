@@ -28,15 +28,34 @@
 .heroimg img {
   width: 30rem;
 }
+.AboutUs{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
 .AboutUsSection{
   display:flex;
   flex-direction:row ;
-  justify-content: space-between;
+  justify-content: center;
+  gap:3rem;
+ 
+}
+.AboutUsSection img{
+  width:3rem;
   
 }
 .AboutUsSection div {
   display: flex;
   align-items: center;
   gap: 10px; /* Adjust spacing */
+  justify-content: center;
 }
 
+.offerList{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+}
