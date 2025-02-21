@@ -34,3 +34,9 @@
   justify-content: space-between;
   
 }
+.AboutUsSection div {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust spacing */
+}
+
