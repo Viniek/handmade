@@ -3,6 +3,7 @@ import heroimg from "../../assets/homepage.jpg";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import TypingAnimator from "react-typing-animator";
+import { MdAgriculture } from "react-icons/md";
 
 function Home() {
   const textArray = [
@@ -25,33 +26,49 @@ function Home() {
   );
 
   return (
-    <section className="homehero">
-      <div className="hero">
-        <p>Tranquil professional items</p>
-        <h1>
-          Online Market Place for <br />
-          Handmade Items
-        </h1>
-        <p>{animator}</p>
-      </div>
-      <div className="heroimg">
-        <img
-          src="https://res.cloudinary.com/dgn62le6w/image/upload/v1721507931/oqnojemmikj4qmcd7jpy.png"
-          alt="Handmade goods"
-        />
-      </div>
+    <>
+      <section className="homehero">
+        <div className="Mainhero"></div>
+        <div className="hero">
+          <p>Tranquil professional items</p>
+          <h1>
+            Online Market Place for <br />
+            Handmade Items
+          </h1>
+          <p>{animator}</p>
+        </div>
+        <div className="heroimg">
+          <img
+            src="https://res.cloudinary.com/dgn62le6w/image/upload/v1721507931/oqnojemmikj4qmcd7jpy.png"
+            alt="Handmade goods"
+          />
+        </div>
+      </section>
 
-      <div className="About us">
-<h1>Passionate about craftsmanship?</h1>
-<p1><ul>
-  <li>Custom-made creations</li>
-  <li>Artisanal craftsmanship</li>
-  </ul></p1>
-
-      </div>
-    </section>
-
-    
+      <h1>Passionate about craftsmanship?</h1>
+      <section className="AboutUs">
+        <p>What we do</p>
+        <h2>We provide Services</h2>
+        <div className="AboutUsSection">
+          <p>
+            Custom-made creations <br />
+            {MdAgriculture }
+          </p>
+          <p>
+            Handmade with love and precision <br />
+            {MdAgriculture }
+          </p>
+          <p>
+            Where creativity meets quality <br />
+            {MdAgriculture }
+          </p>
+          <p>
+            Unique, handcrafted designs <br />
+            {MdAgriculture }
+          </p>
+        </div>
+      </section>
+    </>
   );
 }
 

@@ -28,3 +28,9 @@
 .heroimg img {
   width: 30rem;
 }
+.AboutUsSection{
+  display:flex;
+  flex-direction:row ;
+  justify-content: space-between;
+  
+}
