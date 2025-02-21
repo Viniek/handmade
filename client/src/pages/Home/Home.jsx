@@ -56,39 +56,53 @@ function Home() {
         
         <div className="AboutUsSection">
          
-         {/* 1st List */}
-          <p className="offerList"> <img src=" https://res.cloudinary.com/dgn62le6w/image/upload/v1740139250/jhwjvsssn4kzmb7pxv5f.png"/><br />  
-         <h1>Custom-made creations</h1>      
-        uniquely crafted to match your style.<br/>
-        Personalized designs.<br/>
-        Just like you!
-          </p>
+         {/* 1st List */}     
+      
+         <div className="offerList"> 
+        <ul>
+        <img src=" https://res.cloudinary.com/dgn62le6w/image/upload/v1740139250/jhwjvsssn4kzmb7pxv5f.png"/><br />  
+         <h1>Custom-made creations</h1> 
+          <li>Uniquely crafted to match your style.<br/></li>
+          <li>We bring your ideas to life with personalized designs.<br/></li>
+          <li> No two products are ever the same—just like you!</li>
+        </ul>
+          </div>
+
           {/* 2nd List */}
-          <p className="OfferList">
+          < div className="offerList">     
+          <ul>
           <img src="https://res.cloudinary.com/dgn62le6w/image/upload/v1740138712/neol0od62yzwkjydgde2.png"/>
             <h1>Artisanal craftsmanship </h1>
-            made with skill, care, and attention to detail.<br/>
-            blend traditional techniques with modern creativity.<br/>
-            Quality is at the heart of everything we create.<br/>
-          </p>
+            <li>  made with skill, care, and attention to detail.<br/></li>
+            <li>blend traditional techniques with modern creativity.<br/></li>
+            <li>Quality is at the heart of everything we create.</li>
+          </ul>
+          </div>
+
           {/* 3rd List */}
-          <p className="offerList">
+          <div className="offerList">        
+          <ul>
           <img src=" https://res.cloudinary.com/dgn62le6w/image/upload/v1740138821/vlxiaqii2oo6lueheys3.png"/>
           <h1> High-quality handmade products</h1>
-          We use premium materials to ensure durability.<br/>
-          Each item is carefully inspected for perfection.<br/>
-          Beauty and functionality come together in every piece.
-          </p>
+            <li>We use premium materials to ensure durability.<br/></li>
+            <li>  Each item is carefully inspected for perfection.<br/></li>
+            <li>   Beauty and functionality come together in every piece.</li>
+          </ul>
+          </div>
+
           {/* 4th list */}
-          <p className="offerList">
-          <img src="https://res.cloudinary.com/dgn62le6w/image/upload/v1740138888/ke1pxcz4ot5ssnpvgyz3.png"/>
+          <div className="offerList">          
+         <ul>
+         <img src="https://res.cloudinary.com/dgn62le6w/image/upload/v1740138888/ke1pxcz4ot5ssnpvgyz3.png"/>
          <h1> Designed for elegance and durability</h1>
-         We use premium materials to ensure durability.<br/>
-          Each item is carefully inspected for perfection.<br/>
-          Beauty and functionality come together in every piece.
-          
+          <li>We use premium materials to ensure durability.<br/></li>
+          <li>Each item is carefully inspected for perfection.<br/></li>
+          <li>Beauty and functionality come together in every piece.   </li>
+         </ul>  
+        
+              
  
-          </p>
+          </div>
         </div>
       </section>
     </>

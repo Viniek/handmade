@@ -32,13 +32,18 @@
   display:flex;
   flex-direction: column;
   align-items: center;
+ background-color: #fffafa;
+  margin:1rem;
 }
 .AboutUsSection{
   display:flex;
   flex-direction:row ;
-  justify-content: center;
+  justify-content: space-around;
   gap:3rem;
- 
+  box-shadow: 16px -19px 20px -20px rgba(0,0,0,0.45),
+  25px 0px 20px -20px rgba(0,0,0,0.45),
+  0px 25px 20px -20px rgba(0,0,0,0.45),
+  -25px 0px 20px -20px rgba(0,0,0,0.45);
 }
 .AboutUsSection img{
   width:3rem;
@@ -49,6 +54,8 @@
   align-items: center;
   gap: 10px; /* Adjust spacing */
   justify-content: center;
+  border-top: 20rem black;
+  margin:3rem;
 }
 
 .offerList{
@@ -56,6 +63,16 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+padding:2rem;
 
+}
+.offerList :hover{
+  background-color: #F2CA46;
 
+  
+}
+.offerList ul{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
