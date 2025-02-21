@@ -40,7 +40,15 @@ function Home() {
           alt="Handmade goods"
         />
       </div>
+
+      <div className="About us">
+<h1>Passionate about craftsmanship?</h1>
+
+
+      </div>
     </section>
+
+    
   );
 }
 
