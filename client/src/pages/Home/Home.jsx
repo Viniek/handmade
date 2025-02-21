@@ -43,7 +43,10 @@ function Home() {
 
       <div className="About us">
 <h1>Passionate about craftsmanship?</h1>
-
+<p1><ul>
+  <li>Custom-made creations</li>
+  <li>Artisanal craftsmanship</li>
+  </ul></p1>
 
       </div>
     </section>
