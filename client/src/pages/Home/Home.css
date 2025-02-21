@@ -67,12 +67,13 @@ padding:2rem;
 
 }
 .offerList :hover{
-  background-color: #F2CA46;
-
+  background-color: rgb(221, 214, 214);
+padding-left:.2rem
   
 }
 .offerList ul{
   display:flex;
   flex-direction: column;
   align-items: center;
+
 }

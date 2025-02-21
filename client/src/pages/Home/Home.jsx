@@ -48,7 +48,7 @@ function Home() {
 
 
 {/* About us Section */}
-      <h1>Passionate about craftsmanship?</h1>
+      
       <section className="AboutUs">
         <p>What we do</p>
         <h2>We provide Services</h2>
@@ -61,7 +61,7 @@ function Home() {
          <div className="offerList"> 
         <ul>
         <img src=" https://res.cloudinary.com/dgn62le6w/image/upload/v1740139250/jhwjvsssn4kzmb7pxv5f.png"/><br />  
-         <h1>Custom-made creations</h1> 
+         <h1>Custom-made</h1> 
           <li>Uniquely crafted to match your style.<br/></li>
           <li>We bring your ideas to life with personalized designs.<br/></li>
           <li> No two products are ever the same—just like you!</li>
@@ -72,7 +72,7 @@ function Home() {
           < div className="offerList">     
           <ul>
           <img src="https://res.cloudinary.com/dgn62le6w/image/upload/v1740138712/neol0od62yzwkjydgde2.png"/>
-            <h1>Artisanal craftsmanship </h1>
+            <h1>Artisanal </h1>
             <li>  made with skill, care, and attention to detail.<br/></li>
             <li>blend traditional techniques with modern creativity.<br/></li>
             <li>Quality is at the heart of everything we create.</li>
@@ -83,7 +83,7 @@ function Home() {
           <div className="offerList">        
           <ul>
           <img src=" https://res.cloudinary.com/dgn62le6w/image/upload/v1740138821/vlxiaqii2oo6lueheys3.png"/>
-          <h1> High-quality handmade products</h1>
+          <h1> High-quality </h1>
             <li>We use premium materials to ensure durability.<br/></li>
             <li>  Each item is carefully inspected for perfection.<br/></li>
             <li>   Beauty and functionality come together in every piece.</li>
@@ -94,7 +94,7 @@ function Home() {
           <div className="offerList">          
          <ul>
          <img src="https://res.cloudinary.com/dgn62le6w/image/upload/v1740138888/ke1pxcz4ot5ssnpvgyz3.png"/>
-         <h1> Designed for elegance and durability</h1>
+         <h1>Elegance</h1>
           <li>We use premium materials to ensure durability.<br/></li>
           <li>Each item is carefully inspected for perfection.<br/></li>
           <li>Beauty and functionality come together in every piece.   </li>
@@ -103,6 +103,13 @@ function Home() {
               
  
           </div>
+        </div>
+      </section>
+
+      <section className="Mission">
+        <div className="ourMission">
+          <img src=" https://res.cloudinary.com/dgn62le6w/image/upload/v1740144293/bmtzbbx8ylk9gkdqvbsk.png"/>
+          <h1>Our Mission</h1>
         </div>
       </section>
     </>
