@@ -77,3 +77,107 @@ padding-left:.2rem
   align-items: center;
 
 }
+
+/* Mission */
+/* .Mission{
+  display:flex;
+  flex-direction: row;
+  gap:1rem;
+}
+.ourMission{
+  padding:1.5rem;
+  border-radius: 50%; */
+  /* border:2rem grey;
+  border-top: red;
+  border-bottom:red; */
+  /* background: #fff;
+  width:50rem;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+/* Mission Section Styling */
+.Mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.ourMission {
+  width: 400px;
+  height: 280px;
+  padding: 1.5rem;
+  border-radius: 50%;
+
+  background: white;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.ourMission:hover {
+  transform: scale(1.05);
+}
+
+/* Colored Circular Borders */
+.ourMission:nth-child(1) {
+  /* border: 8px solid red; */
+  border-right: 8px solid red;
+  border-left:8px solid red;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.ourMission:nth-child(2) {
+  border: 8px solid cyan;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.ourMission:nth-child(3) {
+  border: 8px solid gold;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+/* Mission Icons */
+.ourMission img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+/* Mission Titles */
+.ourMission h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+/* Mission Text */
+.ourMission p {
+  font-size: 0.9rem;
+  color: #555;
+  padding: 0 10px;
+}
+
+/* Reflection Effect */
+.ourMission::after {
+  content: "";
+  width: 80%;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  filter: blur(4px);
+}
+

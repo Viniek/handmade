@@ -94,7 +94,7 @@ function Home() {
           <div className="offerList">          
          <ul>
          <img src="https://res.cloudinary.com/dgn62le6w/image/upload/v1740138888/ke1pxcz4ot5ssnpvgyz3.png"/>
-         <h1>Elegance</h1>
+         <h1>Elegant</h1>
           <li>We use premium materials to ensure durability.<br/></li>
           <li>Each item is carefully inspected for perfection.<br/></li>
           <li>Beauty and functionality come together in every piece.   </li>
@@ -110,6 +110,19 @@ function Home() {
         <div className="ourMission">
           <img src=" https://res.cloudinary.com/dgn62le6w/image/upload/v1740144293/bmtzbbx8ylk9gkdqvbsk.png"/>
           <h1>Our Mission</h1>
+          To create unique, high-quality handmade products that bring creativity, authenticity, and craftsmanship to every customer. We aim to blend tradition with modern design, ensuring each piece tells a story and adds value to your life.
+        </div>
+        {/* Our Vision */}
+        <div className="ourMission">
+          <img src=" https://res.cloudinary.com/dgn62le6w/image/upload/v1740144859/kmtaowsmnv0oyhgbizaj.png"/>
+          <h1>Our Vision</h1>
+          To be a leading brand in handmade artistry, inspiring a culture of creativity and sustainability. We envision a world where handmade products are cherished for their authenticity, quality, and timeless appeal.
+        </div>
+        {/* Our Values */}
+        <div className="ourMission">
+          <img src="https://res.cloudinary.com/dgn62le6w/image/upload/v1740144985/tjqfbgt6gcdboyhmbqsg.png"/>
+          <h1>Our Values</h1>
+          Authenticity,Quality,Creativity,Sustainabilityand Customer Satisfaction.
         </div>
       </section>
     </>
