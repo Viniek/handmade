@@ -9,7 +9,7 @@ function Home() {
     "Handmade Items",
     "Your place to buy",
     "Reach us Today",
-    "njerivictory52@gmail.com"
+    "njerivictory52@gmail.com",
   ];
   const animator = (
     <TypingAnimator
