@@ -28,3 +28,131 @@
 .heroimg img {
   width: 30rem;
 }
+.AboutUs{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+ background-color: #fffafa;
+  margin:1rem;
+}
+.AboutUsSection{
+  display:flex;
+  flex-direction:row ;
+  justify-content: space-around;
+  gap:3rem;
+  box-shadow: 16px -19px 20px -20px rgba(0,0,0,0.45),
+  25px 0px 20px -20px rgba(0,0,0,0.45),
+  0px 25px 20px -20px rgba(0,0,0,0.45),
+  -25px 0px 20px -20px rgba(0,0,0,0.45);
+}
+.AboutUsSection img{
+  width:3rem;
+  
+}
+.AboutUsSection div {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust spacing */
+  justify-content: center;
+  border-top: 20rem black;
+  margin:3rem;
+}
+
+.offerList{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding:2rem;
+
+}
+.offerList :hover{
+  background-color: #ebf6f7;
+padding:1px;
+  
+}
+.offerList ul{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* Mission */
+.Mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.ourMission {
+  width: 400px;
+  height: 280px;
+  padding: 1.5rem;
+  border-radius: 50%;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.ourMission:hover {
+  transform: scale(1.05);
+}
+
+/* Colored Circular Borders */
+.ourMission:nth-child(1) {
+  border-right: 8px solid red;
+  border-left:8px solid red;
+ 
+}
+.ourMission:nth-child(2) {
+  border-right: 8px solid cyan;
+  border-left: 8px solid cyan;
+}
+.ourMission:nth-child(3) {
+  border-right: 8px solid gold;
+  border-left: 8px solid gold;
+}
+
+/* Mission Icons */
+.ourMission img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+/* Mission Titles */
+.ourMission h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+/* Mission Text */
+.ourMission p {
+  font-size: 0.9rem;
+  color: #555;
+  padding: 0 10px;
+}
+
+/* Reflection Effect */
+.ourMission::after {
+  content: "";
+  width: 80%;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  filter: blur(4px);
+}
+
