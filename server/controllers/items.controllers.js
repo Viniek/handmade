@@ -15,6 +15,7 @@ const itemrouter = Router();
 
 export const getallItems = async (req, res) => {
   try {
+  
     const items = await prisma.items.findMany();
     res.status(200).json(items);
   } catch (e) {
